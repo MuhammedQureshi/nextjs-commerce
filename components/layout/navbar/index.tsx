@@ -12,7 +12,7 @@ export async function Navbar() {
   const menu = await getMenu('next-js-frontend-header-menu');
 
   return (
-    <nav className="z-50 fixed top-8 left-1/2 transform -translate-x-1/2 inline-flex mx-auto justify-between w-11/12 sm:w-1/2 rounded-full backdrop-blur-xl border border-1 border-purple-500/10 backdrop-filter bg-green-900/10 px-6 py-2 items-center">
+    <nav className="z-50 fixed top-8 left-1/2 transform -translate-x-1/2 inline-flex mx-auto justify-between w-[19.8rem] sm:w-1/2 rounded-full backdrop-blur-xl border border-1 border-purple-500/10 backdrop-filter bg-green-900/10 px-6 py-2 items-center">
       <div className="block flex-none md:hidden">
         <Suspense fallback={null}>
           <MobileMenu menu={menu} />
@@ -25,7 +25,7 @@ export async function Navbar() {
             prefetch={true}
             className="mr-2 flex w-full items-center justify-center md:w-auto lg:mr-6"
           >
-            <div className="ml-2 flex-none text-2xl font-bold uppercase md:hidden lg:block bg-clip-text text-transparent bg-gradient-to-l from-[#00966F] to-[#FFD050]">
+            <div className="ml-2 flex-none text-md md:text-2xl font-bold uppercase md:hidden lg:block bg-clip-text text-transparent bg-gradient-to-l from-[#FFD050] to-[#00966F]">
               Abdeen Institute
             </div>
           </Link>
