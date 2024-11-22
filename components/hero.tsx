@@ -3,7 +3,7 @@ export default function Hero() {
       <div className="relative bg-cover bg-center" style={{ backgroundImage: "url('/1.jpg')" }}>
         {/* Hero Section */}
         <main className="relative z-10 flex flex-col items-center justify-center text-center text-white pt-[80px] h-[calc(100vh-80px)]">
-          <h2 className="text-3xl font-bold md:text-6xl">
+          <h2 className="text-2xl font-bold md:text-6xl">
             Become a <span className="text-yellow-400">Hafiz</span> in 2 years or<br />
             <span className="text-yellow-400">Master Arabic</span> with Sheikh Abdeen
           </h2>
