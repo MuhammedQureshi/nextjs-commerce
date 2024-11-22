@@ -1,5 +1,4 @@
 import CartModal from 'components/cart/modal';
-import LogoSquare from 'components/logo-square';
 import { getMenu } from 'lib/shopify';
 import { Menu } from 'lib/shopify/types';
 import Link from 'next/link';
@@ -13,7 +12,7 @@ export async function Navbar() {
   const menu = await getMenu('next-js-frontend-header-menu');
 
   return (
-    <nav className="relative flex items-center justify-between p-4 lg:px-6">
+    <nav className="z-50 fixed top-8 left-1/2 transform -translate-x-1/2 inline-flex mx-auto justify-between w-11/12 sm:w-1/2 rounded-full backdrop-blur-xl border border-1 border-purple-500/10 backdrop-filter bg-green-900/10 px-6 py-2 items-center">
       <div className="block flex-none md:hidden">
         <Suspense fallback={null}>
           <MobileMenu menu={menu} />
@@ -26,9 +25,8 @@ export async function Navbar() {
             prefetch={true}
             className="mr-2 flex w-full items-center justify-center md:w-auto lg:mr-6"
           >
-            <LogoSquare />
-            <div className="ml-2 flex-none text-sm font-medium uppercase md:hidden lg:block">
-              {SITE_NAME}
+            <div className="ml-2 flex-none text-2xl font-bold uppercase md:hidden lg:block bg-clip-text text-transparent bg-gradient-to-l from-[#00966F] to-[#FFD050]">
+              Abdeen Institute
             </div>
           </Link>
           {menu.length ? (
