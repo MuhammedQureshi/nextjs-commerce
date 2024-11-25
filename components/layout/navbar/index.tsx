@@ -19,10 +19,10 @@ export async function Navbar() {
   ];
 
   return (
-    <nav className="z-50 fixed top-4 w-full px-2 sm:px-8">
-      <div className="flex items-center gap-10 justify-between mx-auto max-w-5xl bg-green-900/10 backdrop-blur-xl border border-purple-500/10 rounded-full px-6 py-3">
+    <nav className="z-50 fixed top-4 w-full px-4 sm:px-8">
+      <div className="flex items-center justify-between mx-auto max-w-5xl bg-green-900/10 backdrop-blur-xl border border-purple-500/10 rounded-full px-6 py-3">
         {/* Mobile Menu Button */}
-        <div className="flex md:hidden">
+        <div className="flex lg:hidden">
           <Suspense fallback={null}>
             <MobileMenu menu={menu} />
           </Suspense>
@@ -36,7 +36,7 @@ export async function Navbar() {
         </div>
 
         {/* Links (Desktop Only) */}
-        <ul className="hidden md:flex items-center gap-8 flex-1 justify-center">
+        <ul className="hidden lg:flex items-center gap-8 flex-1 justify-center">
           {links.map((item) => (
             <li key={item.label} className="whitespace-nowrap">
               <Link
@@ -52,7 +52,7 @@ export async function Navbar() {
 
         {/* Search and Cart */}
         <div className="flex items-center space-x-4">
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <Suspense fallback={<SearchSkeleton />}>
               <Search />
             </Suspense>
