@@ -19,7 +19,7 @@ export async function Navbar() {
   ];
 
   return (
-    <nav className="z-50 fixed top-4 w-full px-auto sm:px-8">
+    <nav className="z-50 fixed top-4 w-full px-2 sm:px-8">
       <div className="flex items-center gap-10 justify-between mx-auto max-w-5xl bg-green-900/10 backdrop-blur-xl border border-purple-500/10 rounded-full px-6 py-3">
         {/* Mobile Menu Button */}
         <div className="flex md:hidden">
