@@ -10,7 +10,7 @@ export default function Hero() {
           <p className="mt-6 max-w-2xl text-lg">
             Daily guidance, self-paced videos, and motivating group lessons to help you excel with Tajweed.
           </p>
-          <button className="px-6 py-3 mt-8 text-lg font-semibold text-black bg-yellow-400 rounded-xl hover:bg-yellow-300">
+          <button className="px-6 py-3 mt-8 text-base font-semibold text-black bg-yellow-400 rounded-xl hover:bg-yellow-300">
             Start Your Journey Today
           </button>
         </main>

@@ -30,6 +30,15 @@ export default function MobileMenu({ menu }: { menu: Menu[] }) {
     setIsOpen(false);
   }, [pathname, searchParams]);
 
+
+  const links = [
+    { label: 'Courses', href: '/courses' },
+    { label: 'E-Books', href: '/ebooks' },
+    { label: 'Meet Abdeen', href: '/meet-abdeen' },
+    { label: 'Donate', href: '/donate' },
+    { label: 'Contact', href: '/contact' },
+  ];
+
   return (
     <>
       <button
@@ -76,15 +85,15 @@ export default function MobileMenu({ menu }: { menu: Menu[] }) {
                     <Search />
                   </Suspense>
                 </div>
-                {menu.length ? (
+                {links.length ? (
                   <ul className="flex w-full flex-col">
-                    {menu.map((item: Menu) => (
+                    {links.map((item) => (
                       <li
                         className="py-2 text-xl text-black transition-colors hover:text-neutral-500 dark:text-white"
-                        key={item.title}
+                        key={item.label}
                       >
-                        <Link href={item.path} prefetch={true} onClick={closeMobileMenu}>
-                          {item.title}
+                        <Link href={item.href} prefetch={true} onClick={closeMobileMenu}>
+                          {item.label}
                         </Link>
                       </li>
                     ))}
