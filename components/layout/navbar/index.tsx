@@ -20,9 +20,9 @@ export async function Navbar() {
 
   return (
     <nav className="z-50 fixed top-4 w-full px-4 sm:px-8">
-      <div className="flex items-center justify-between mx-auto max-w-5xl bg-green-900/10 backdrop-blur-xl border border-purple-500/10 rounded-full px-6 py-3">
+      <div className="flex items-center justify-between mx-auto max-w-5xl bg-green-900/20 backdrop-blur-xl border border-purple-500/10 rounded-full px-6 py-3">
         {/* Mobile Menu Button */}
-        <div className="flex lg:hidden">
+        <div className="flex md:hidden">
           <Suspense fallback={null}>
             <MobileMenu menu={menu} />
           </Suspense>
@@ -31,12 +31,12 @@ export async function Navbar() {
         {/* Logo */}
         <div className="flex items-center">
           <Link href="/" prefetch className="flex items-center text-lg md:text-2xl font-bold uppercase bg-clip-text text-transparent bg-gradient-to-l from-[#FFD050] to-[#00966F]">
-            Abdeen <span className="text-white ml-1">Academy</span>
+            Abdeens <span className="text-white ml-1">Academy</span>
           </Link>
         </div>
 
         {/* Links (Desktop Only) */}
-        <ul className="hidden lg:flex items-center gap-8 flex-1 justify-center">
+        <ul className="hidden lg:flex items-center gap-6 flex-1 justify-center">
           {links.map((item) => (
             <li key={item.label} className="whitespace-nowrap">
               <Link
