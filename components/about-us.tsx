@@ -4,21 +4,23 @@ export default function AboutUs() {
   return (
     <div className="relative bg-white min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-10">
         {/* Kaaba Image */}
-        <div className="absolute top-12 left-12 w-16 md:w-24">
-          <Image src="/kaaba.png" alt="Kaaba" layout="responsive" width={100} height={100} />
+        <div className="absolute bottom-0 right-0 w-[30rem]">
+          <Image src="/kaaba.png" alt="Kaaba" layout="responsive" width={400} height={100} />
         </div>
         
         {/* Pattern Image */}
-        <div className="absolute top-0 right-10 w-40 md:w-60 opacity-10">
+        <div className="absolute top-[2rem] left-10 w-[20rem]">
           <Image src="/pattern.png" alt="Pattern" layout="responsive" width={200} height={200} />
         </div>
 
-        {/* Arabic Text Image */}
-        <div className="absolute top-16 right-16 w-32 md:w-40">
+        {/* Arabic Text Image
+        <div className="w-32 md:w-40">
           <Image src="/arabic-text.png" alt="Arabic Text" layout="responsive" width={150} height={150} />
-        </div>
+        </div> */}
+
+        
       </div>
 
       {/* Main Content */}
@@ -36,10 +38,10 @@ export default function AboutUs() {
 
         {/* Right Section - Text Content */}
         <div className="text-center md:text-left">
-          <h1 className="text-base uppercase font-extrabold text-green-800 leading-snug">
-            Abdeens Academy
-          </h1>
-          <h2 className="text-2xl font-medium mt-4">
+            <h1 className="text-base uppercase font-extrabold text-green-800 leading-snug">
+              Abdeens Academy
+            </h1>
+          <h2 className="text-3xl font-medium mt-4 text-black">
             Your Path to Mastering the Quran and Arabic
           </h2>
           <p className="mt-4 text-gray-700 leading-relaxed">
