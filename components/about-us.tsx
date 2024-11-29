@@ -1,6 +1,8 @@
 import Image from 'next/image';
 
-export default function AboutUs() {
+export default async function AboutUs() {
+
+
   return (
     <div className="relative bg-white min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Elements */}
@@ -14,17 +16,10 @@ export default function AboutUs() {
         <div className="absolute top-[2rem] left-10 w-[20rem]">
           <Image src="/pattern.png" alt="Pattern" layout="responsive" width={200} height={200} />
         </div>
-
-        {/* Arabic Text Image
-        <div className="w-32 md:w-40">
-          <Image src="/arabic-text.png" alt="Arabic Text" layout="responsive" width={150} height={150} />
-        </div> */}
-
-        
       </div>
 
       {/* Main Content */}
-      <div className="relative max-w-8sxl mx-auto px-6 md:px-12 lg:px-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div className="relative max-w-8sxl py-20 mx-auto px-6 md:px-12 lg:px-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left Section - Image */}
         <div className="w-full flex justify-center">
           <Image
@@ -37,7 +32,7 @@ export default function AboutUs() {
         </div>
 
         {/* Right Section - Text Content */}
-        <div className="text-center md:text-left">
+        <div className="text-start md:text-left">
             <h1 className="text-base uppercase font-extrabold text-green-800 leading-snug">
               Abdeens Academy
             </h1>

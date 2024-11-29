@@ -1,4 +1,5 @@
 import AboutUs from "components/about-us";
+import Courses from "components/course/courses";
 import Hero from "components/hero";
 
 export const metadata = {
@@ -13,6 +14,7 @@ export default function HomePage() {
     <>
       <Hero />
       <AboutUs />
+      <Courses/>
       {/* <ThreeItemGrid />
       <Carousel /> */}
       {/* <Footer /> */}
