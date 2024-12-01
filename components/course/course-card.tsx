@@ -9,8 +9,8 @@ interface CourseCardProps {
   
   const CourseCard: React.FC<CourseCardProps> = ({ title, description, price, imageUrl, productUrl, buttonText }) => {
   return (
-    <div className="max-w-sm rounded-lg shadow-lg text-center overflow-hidden bg-white">
-      <img className="w-full h-[20rem] object-contain" src={imageUrl} alt={title} />
+    <div className="max-w-md rounded-lg shadow-lg text-center overflow-hidden bg-white">
+      <img className="w-full h-[20rem] object-cover" src={imageUrl} alt={title} />
       <div className="p-4">
         <h2 className="text-xl font-semibold text-gray-800">{title}</h2>
         <p className="mt-2 text-gray-600 text-sm">{description}</p>
