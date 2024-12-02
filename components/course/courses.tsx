@@ -6,9 +6,12 @@ export const metadata = {
   description: 'Explore our popular courses in Quran and Arabic.',
 };
 
+export const revalidate = 0;
+
 export default async function Courses() {
   // Fetch products directly in the Server Component
   const products = await getProducts({ sortKey: 'TITLE', reverse: false, query: '' });
+  console.log('Fetched products:', products);
 
   // Limit the fetched products to the first 3
   const limitedProducts = products.slice(0, 3);
