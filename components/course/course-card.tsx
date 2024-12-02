@@ -15,10 +15,10 @@ interface CourseCardProps {
         <h2 className="text-2xl font-semibold text-gray-800">{title}</h2>
         <p className="mt-4 text-gray-600">{description}</p>
         <div className="flex items-center justify-center gap-4 ">
-        <p className="mt-4 bg-[#FFD050] text-black block rounded-md py-3 px-6">{price}</p>
+        <p className="mt-4 bg-[#FFD050] text-black block rounded-lg py-3 px-6">{price}</p>
         <a
           href={productUrl}
-          className="block mt-4 bg-[#28a745] hover:bg-[#218838] text-white text-center py-3 px-6 rounded"
+          className="block mt-4 bg-[#28a745] hover:bg-[#218838] text-white text-center py-3 px-6 rounded-lg"
         >
           {buttonText}
         </a>
