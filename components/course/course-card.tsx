@@ -9,18 +9,20 @@ interface CourseCardProps {
   
   const CourseCard: React.FC<CourseCardProps> = ({ title, description, price, imageUrl, productUrl, buttonText }) => {
   return (
-    <div className="max-w-md rounded-lg shadow-lg text-center overflow-hidden bg-white">
+    <div className="max-w-md rounded-lg shadow-lg text-center flex flex-col justify-between overflow-hidden bg-white border border-gray-200">
       <img className="w-full h-[20rem] object-cover" src={imageUrl} alt={title} />
-      <div className="p-4">
-        <h2 className="text-xl font-semibold text-gray-800">{title}</h2>
-        <p className="mt-2 text-gray-600 text-sm">{description}</p>
-        <p className="mt-4 text-lg font-bold text-green-600">{price}</p>
+      <div className="p-6">
+        <h2 className="text-2xl font-semibold text-gray-800">{title}</h2>
+        <p className="mt-4 text-gray-600">{description}</p>
+        <div className="flex items-center justify-center gap-4 ">
+        <p className="mt-4 bg-[#FFD050] text-black block rounded-md py-3 px-6">{price}</p>
         <a
           href={productUrl}
-          className="block mt-4 bg-green-500 hover:bg-green-600 text-white text-center py-2 px-4 rounded"
+          className="block mt-4 bg-[#28a745] hover:bg-[#218838] text-white text-center py-3 px-6 rounded"
         >
           {buttonText}
         </a>
+        </div>
       </div>
     </div>
   );
