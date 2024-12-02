@@ -17,7 +17,7 @@ export default async function Courses() {
     <div className="p-20 bg-[#fff4d7]" style={{ backgroundImage: "url('/courses-one_bg.png')" }}>
       <h1 className="text-3xl font-bold  text-black text-center mb-6">Popular Courses</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {limitedProducts.map((course) => (
+        {limitedProducts.map((course: any) => (
           <CourseCard
             key={course.id}
             title={course.title}
