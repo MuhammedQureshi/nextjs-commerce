@@ -8,13 +8,13 @@ export const metadata = {
 
 export default async function Courses() {
   // Fetch products directly in the Server Component
-  const products = await getProducts({ sortKey: 'TITLE', reverse: false, query: '' });
+  const products = await getProducts({ sortKey: 'TITLE', reverse: true, query: '' });
 
   // Limit the fetched products to the first 3
   const limitedProducts = products.slice(0, 3);
 
   return (
-    <div className="p-20 bg-[#fff4d7]" style={{ backgroundImage: "url('/courses-one_bg.png')" }}>
+    <div className="p-10 flex flex-col items-center justify-center bg-[#fff4d7]" style={{ backgroundImage: "url('/courses-one_bg.png')" }}>
       <h1 className="text-3xl font-bold  text-black text-center mb-6">Popular Courses</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {limitedProducts.map((course: any) => (
