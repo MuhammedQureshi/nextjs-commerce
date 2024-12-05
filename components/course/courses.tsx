@@ -14,7 +14,7 @@ export default async function Courses() {
   const limitedProducts = products.slice(0, 3);
 
   return (
-    <div className="p-10 flex flex-col items-center justify-center bg-[#fff4d7]" style={{ backgroundImage: "url('/courses-one_bg.png')" }}>
+    <div className="p-10 pb-[10rem] flex flex-col items-center justify-center bg-[#fff4d7]" style={{ backgroundImage: "url('/courses-one_bg.png')" }}>
       <h1 className="text-3xl font-bold  text-black text-center mb-6">Popular Courses</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {limitedProducts.map((course: any) => (
